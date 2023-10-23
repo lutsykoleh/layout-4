@@ -1,0 +1,25 @@
+@import "app/scss/layout/main-parts/_info.scss";
+@import "base/font";
+
+.main{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 1920px) {
+  .main {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 902px) {
+  .main {
+    margin-top: 85px
+  }
+}
+
+@media (max-width: 750px) {
+  .main {
+    margin-top: 70px;
+  }
+}
