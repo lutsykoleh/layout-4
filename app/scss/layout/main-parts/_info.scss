@@ -55,6 +55,13 @@
         padding: 15px;
         width: 556px;
         font-size: 14px;
+        &:focus{
+          box-shadow: 0px 0px 5px rgba(0,0,255,0.5);
+          border: 2px solid #66afe9;
+          &::placeholder{
+            color:transparent;
+          }
+        }
       }
 
       & label{
