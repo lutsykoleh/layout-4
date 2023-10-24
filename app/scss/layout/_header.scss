@@ -21,7 +21,7 @@
 .header__logo{
     height: 80px;
     width: 80px;
-    margin: 10px 0;
+    margin: 10px auto 10px 0;
 }
 
 .header__inner{
@@ -34,6 +34,8 @@
         display: flex;
         flex-direction: row;
         gap: 35px;
+        align-items: center;
+        margin: 40px 0 41px auto;
         .header__menu-item{
             list-style-type: none;
         }

@@ -10,3 +10,32 @@ if(menu && menuBtn){
         body.classList.toggle('lock')
     })
 }
+
+$(document).ready(function(){
+    $('.course-slider__items').slick({
+        Infinity: true,
+        arrows: false,
+        dots:$('.course-slider__item').length > 3,
+        slidesToShow:3,
+        slidesToScroll:3,
+        responsive:[
+            {
+                breakpoint: 850,
+                settings:{
+                    slidesToShow:2,
+                    slidesToScroll:2,
+                    dots:true,
+                }
+                
+            },
+            {
+                breakpoint: 600,
+                settings:{
+                    slidesToShow:1,
+                    slidesToScroll:1,
+                    dots:true,
+                }
+            }
+        ]
+    })
+})

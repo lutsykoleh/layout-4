@@ -46,7 +46,7 @@
           </div>
         </div>
     </header>
-    <div class="main">
+    <main class="main">
       <div class="registration">
         <div class="container">
           <div class="registration__inner">
@@ -78,10 +78,12 @@
                   <label>Мене більше цікавить <img src="images/icons/required.png" alt="required"><br></label>
                   <input type="message" id="message" placeholder="developer or QA" required>
                   <label>Номер телефону <img src="images/icons/required.png" alt="required"><br></label>
-                  <input type="tel" id="tel" placeholder="Номер телефону: +38 XXX XX XX XXX" pattern="^\+380\d{9}$" required>
+                  <input type="tel" id="tel" placeholder="Номер телефону: +38 XXX XX XX XXX" pattern="^\+380\d{9}$"
+                    required>
                   <label>Email <img src="images/icons/required.png" alt="required"><br></label>
                   <input type="email" id="email" placeholder="Email" required>
-                  <label><input type="checkbox" name="checkbox" required>Я погоджуюся із <a href="#">Політикою Конфіденційності </a><img src="images/icons/required.png" alt="required"></label>
+                  <label><input type="checkbox" name="checkbox" required>Я погоджуюся із <a href="#">Політикою
+                      Конфіденційності </a><img src="images/icons/required.png" alt="required"></label>
                   <button type="submit">Зареєструватися зараз</button>
                 </form>
               </div>
@@ -89,7 +91,39 @@
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="course-slider">
+        <div class="container">
+          <div class="course-slider-inner">
+            <h2 class="course-slider__title">Курс «Розробка сайтів»</h2>
+            <div class="course-slider__items">
+              <div class="course-slider__item">
+                <img src="images/icons/course-icon-1.png" alt="course icon">
+                <h3>Розробка сайтів на WordPress</h3>
+                <p>Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress, навчишся
+                  створювати
+                  сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових
+                  завдань.</p>
+              </div>
+              <div class="course-slider__item">
+                <img src="images/icons/course-icon-2.png" alt="course icon">
+                <h3>Розробка сайтів на Drupal 8</h3>
+                <p>Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети основних та
+                  додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багатьох інших).</p>
+              </div>
+             <div class="course-slider__item">
+                <img src="images/icons/course-icon-3.png" alt="course icon">
+                <h3>Ознайомлення з тестуванням</h3>
+                <p>Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.Також QA-спеціаліст
+                  розкаже
+                  про  види тестування (функціональне, регресивне, системне, тестування швидкодії тощо).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
 
 
 
@@ -98,7 +132,10 @@
 
 
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
