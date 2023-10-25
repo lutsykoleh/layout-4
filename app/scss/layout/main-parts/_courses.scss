@@ -1,3 +1,5 @@
+@import 'components/_slider-dots.scss';
+
 .course-slider {
     width: 100%;
     padding-top: 66px;
@@ -27,36 +29,10 @@
                 width: 100%;
             }
 
-            // styling dots
-
-            .slick-dots {
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                list-style: none;
-                font-size: 0;
-            }
-
             .slick-dots li {
                 padding-top: 15px;
                 margin-bottom: -40px;
             }
-
-            .slick-dots button {
-                width: 12px;
-                height: 12px;
-                background-color: #b3b3b3;
-                border-radius: 50%;
-                outline: none;
-                margin: 5px;
-                border: none;
-                font-size: 0;
-            }
-
-            .slick-dots li[class="slick-active"] button {
-                background-color: #666;
-            }
-
 
             .course-slider__item {
                 display: flex;

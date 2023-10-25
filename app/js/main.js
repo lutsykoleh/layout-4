@@ -39,3 +39,18 @@ $(document).ready(function(){
         ]
     })
 })
+
+$(document).ready(function(){
+    $('.testimonials-slider').slick({
+            slidesToShow:1,
+            slidesToScroll:1,
+            dots:true,
+            arrows: false,
+            autoplay:true,
+            speed:500,
+            fade: true,
+            cssEase: 'linear',
+            infinite: true,
+            autoplaySpeed: 10000,
+    })
+})
