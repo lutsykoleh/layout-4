@@ -54,3 +54,11 @@ $(document).ready(function(){
             autoplaySpeed: 10000,
     })
 })
+
+
+$(document).ready(function(){
+    $('.mentors__slider').slick({
+        arrows: false,
+        dots: true,
+    })
+})
