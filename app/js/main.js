@@ -1,6 +1,6 @@
+// burger menu
 const menu = document.querySelector('.header__menu')
 const menuBtn = document.querySelector('.header__menu-burger')
-
 const body = document.body;
 
 if(menu && menuBtn){
@@ -11,6 +11,7 @@ if(menu && menuBtn){
     })
 }
 
+// slider courses
 $(document).ready(function(){
     $('.course-slider__items').slick({
         Infinity: true,
@@ -40,6 +41,7 @@ $(document).ready(function(){
     })
 })
 
+// slider testimonials
 $(document).ready(function(){
     $('.testimonials-slider').slick({
             slidesToShow:1,
@@ -55,10 +57,22 @@ $(document).ready(function(){
     })
 })
 
-
+// slider mentors
 $(document).ready(function(){
     $('.mentors__slider').slick({
         arrows: false,
         dots: true,
+        autoplay:true,
+        autoplaySpeed: 10000,
     })
 })
+
+
+// scrolling with the menu item 
+var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top-100
+    }, 500);
+    return false;
+});

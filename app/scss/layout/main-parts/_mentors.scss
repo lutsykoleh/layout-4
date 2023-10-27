@@ -1,8 +1,10 @@
 .mentors {
     &__title {
-        margin: 75px 0 30px 0;
+        padding-top: 75px;
+        margin-bottom:30px;
         text-align: center;
-        font-size: 25px;
+        font-size: 28px;
+        
     }
 
     .mentor {
@@ -43,12 +45,9 @@
     }
 }
 
-
-
-@media (max-width:1060px) {
+@media (max-width: 1060px) {
     .mentors {
         .mentor {
-
             img {
                 width: 300px;
                 height: 318px;
@@ -65,17 +64,16 @@
                 }
             }
         }
-
     }
 }
 
-@media (max-width:796px) {
+@media (max-width: 796px) {
     .mentors {
         .mentor {
-
             img {
                 width: 250px;
                 height: 265px;
+                padding-bottom: 15px;
             }
 
             .mentor__texts {
@@ -95,13 +93,15 @@
                 }
             }
         }
-
     }
 }
 
-
-@media(max-width:760px) {
+@media (max-width: 760px) {
     .mentors {
+        &__title {
+            padding-top: 50px;
+        }
+        
         .mentor {
             display: flex;
             flex-direction: column;
@@ -119,16 +119,12 @@
                     margin-bottom: 25px;
                     padding-bottom: 11px;
                 }
-
-
             }
         }
-
     }
 }
 
-
-@media (max-width:550px) {
+@media (max-width: 550px) {
     .mentors {
         .mentor {
             display: flex;
@@ -143,15 +139,19 @@
     }
 }
 
-
-@media (max-width:550px) {
+@media (max-width: 350px) {
     .mentors {
+        &__title {
+            padding-top: 39px;  
+        }
+        
         .mentor {
             img {
                 padding-bottom: 20px;
                 width: 145px;
                 height: 154px;
             }
+
             .mentor__texts {
                 margin-left: 20px;
                 text-align: center;
@@ -165,8 +165,8 @@
                 .mentor__text {
                     p {
                         margin-bottom: 12px;
-                        color: #a6a6a6;
-                        font-size: 16px;
+                        color: $gray;
+                        font-size: 15px;
                         line-height: 20px;
                     }
                 }

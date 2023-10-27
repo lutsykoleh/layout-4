@@ -1,53 +1,125 @@
-.stats{
-    padding-top: 80px;
+@import 'components/_slider-dots.scss';
+
+.stats {
+    padding-top: 65px;
     width: 100%;
-    background-color: #3498db;
-    .stats__info-items{
+    background-color: $lighter-blue;
+
+    .stats__info-items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         text-align: center;
         align-items: center;
-        .stats__info-item{
+
+        .stats__info-item {
             margin-bottom: 88px;
-            img{
+
+            img {
                 width: 85px;
                 height: 65px;
             }
-            h2{
+
+            h2 {
                 font-size: 28px;
-                color: #fff;
+                color: $white;
                 margin: 20px 0 10px 0;
             }
-            p{
-                font-size: 16px;
-                color:#fff
-                
-            }
 
+            p {
+                font-size: 16px;
+                color: $white;
+            }
         }
     }
 }
 
+// Media queries for responsive design
+@media (max-width: 910px) {
+    .stats {
+        padding-top: 50px;
 
-@media(max-width:910px){
-    .stats{
-        .stats__info-items{
+        .stats__info-items {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+
+            .stats__info-item {
+                margin-bottom: 60px;
+            }
         }
     }
 }
 
+@media (max-width: 530px) {
+    .stats {
+        padding-top: 35px;
 
-@media(max-width:450px){
-    .stats{
-        .stats__info-items{
-            .stats__info-item{
-                h2{
+        .stats__info-items {
+            .stats__info-item {
+                margin-bottom: 40px;
+
+                h2 {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .stats {
+        .stats__info-items {
+            .stats__info-item {
+                h2 {
                     font-size: 20px;
                 }
-                p{
+
+                p {
                     font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .stats {
+        padding-top: 25px;
+
+        .stats__info-items {
+            .stats__info-item {
+                margin-bottom: 30px;
+
+                h2 {
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .stats {
+        padding-top: 25px;
+
+        .stats__info-items {
+            .stats__info-item {
+                margin-bottom: 30px;
+
+                h2 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 11px;
                 }
             }
         }
